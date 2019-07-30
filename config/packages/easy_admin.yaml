@@ -1,0 +1,17 @@
+easy_admin:
+    disabled_actions: ['show']
+    entities:
+        # List the entity class name you want to manage
+        Livre:
+          class: App\Entity\Livre
+
+        Auteur:
+          class: App\Entity\Auteur
+
+        Genre:
+          class: App\Entity\Genre
+
+        Nationalit:
+          class: App\Entity\Nationalit
+          
+#        - App\Entity\User

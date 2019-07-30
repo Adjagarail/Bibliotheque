@@ -7,11 +7,19 @@ easy_admin:
 
         Auteur:
           class: App\Entity\Auteur
+          form:
+            fields:
+              - { property: 'Nom_Complet' }
+              - { property: 'date_Naissance'}
+              - { property: 'date_Deces' }
+              - { property: 'Biographie', type: 'FOS\CKEditorBundle\Form\Type\CKEditorType' }
+              - { property: 'Nationalite' }
+              - { property: 'livres' }
 
         Genre:
           class: App\Entity\Genre
 
         Nationalit:
           class: App\Entity\Nationalit
-          
+
 #        - App\Entity\User
